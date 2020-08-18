@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<script type="text/javascript" src="js/script.js"></script>  
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+	</head>
+	<body>
+		<header>
+		<div class="header-text">TRUYUM</div>
+		<div class="header-link"><u><a href="menu-item-list-admin.html" style="color: #ffffff;">Menu</a></u>
+		</div>
+		<section>
+			<div class="div-admin">
+				<h1>Edit Menu Item</h1>
+				<div class="div-table">
+					<div class="div-table-row">
+						<div class="div-table-col"> Name<br /><input id="title" type="text" name="title" style="width: 650px" /></div>
+					</div>
+					<div class="div-table-row">
+						<div class="div-table-col">Price (Rs.)<br /><input id="price" type="text" name="price" /> </div>
+						<div class="div-table-col">Active<br /><input type="radio" id="inStock" name="inStock" checked="checked" value="Active"/>Yes <input type="radio" name="inStock" value="No" />No</div>
+						<div class="div-table-col">Date Of Launch <br /><input name="dateOfLaunch" id="dateOfLaunch" type="text" /></div>
+						<div class="div-table-col">
+							Category<br />
+							<select name="category" id="category">
+								<option value="0">...</option>
+								<option value="1">Starters</option>
+								<option value="2">Main Course</option>
+								<option value="3">Dessert</option>
+								<option value="4">Drinks</option>
+							</select>
+						</div>
+					</div>
+					<div class="div-table-row">
+						<div class="div-table-col">Free Delivery <input id="freeDelivery" type="checkbox" name="freeDelivery" value="" /></div>
+					</div>
+					<div class="div-table-row">
+						<div class="div-table-col"><input type="submit"  onclick="add1()" name="submit" value="Save" /></div>
+					</div>
+				</div>
+				<article>
+					<p></p>
+				</article>
+			</div>
+		</section>
+		<footer>
+			<p>Copyright &copy 2019</a></p>
+		</footer>
+	</body>
+</html>
