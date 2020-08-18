@@ -52,13 +52,13 @@
 
         <div class="div-table">
             <div class="div-table-row">
-                <div class="div-table-col"> Name<br /><input type="text" name="Name" style="width: 650px" /></div>
+                <div class="div-table-col"> Name<br /><input type="text" id="Name" name="Name" style="width: 650px" /></div>
 
             </div>
             <div class="div-table-row">
-                <div class="div-table-col">Price (Rs.)<br /><input type="text" name="Price" value="" /> </div>
+                <div class="div-table-col">Price (Rs.)<br /><input type="text" id="price" name="Price" value="" /> </div>
                 <div class="div-table-col">Active<br /><input type="radio" name="active" checked="checked" />Yes <input type="radio" name="active" value="" />No</div>
-                <div class="div-table-col">Date Of Launch <br /><input type="date" /></div>
+                <div class="div-table-col">Date Of Launch <br /><input id="dateoflaunch" type="date" /></div>
                 <div class="div-table-col">
                     Category<br /><select>
                         <option value="0">Starters</option>
@@ -88,7 +88,7 @@
 		</footer>
 		<script>
     function add1(){
-        var itemname=document.getElementById("title").value;
+        var itemname=document.getElementById("Name").value;
         var itemprice=document.getElementById("price").value;
         var itemdate=document.getElementById("dateOfLaunch").value;
         if(itemname=="")
